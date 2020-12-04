@@ -21,4 +21,4 @@ Once you download the files and install node.js, make 'npm install' in the proje
     "token" : "" //Your bot token
 }
 ```
-When you run the bot, the deux commands are !playerlist and !playercount. You can change the commands and restrict or no the playerlist command in the index.js file
+When you run the bot, the two commands are !playerlist and !playercount. You can change the commands and restrict or no the playerlist command in the index.js file
