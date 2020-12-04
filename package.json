@@ -1,0 +1,13 @@
+{
+  "name": "fivemdiscord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.1.1",
+    "fivem-api": "^1.5.0",
+    "request": "^2.88.2"
+  }
+}

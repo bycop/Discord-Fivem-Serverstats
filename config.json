@@ -1,0 +1,8 @@
+{
+    "prefix" : "!",
+    "discord" : "Discord ID",
+    "ipabs" : "Server IP:Port",
+    "activity" : "GameActivity",
+    "max" : "100",
+    "token" : ""
+}
