@@ -34,5 +34,5 @@ When you run the bot, the two commands are !playerlist and !playercount. You can
 
 ## Others Bots
 
-Discord-Fivem-Playerlist : https://github.com/bycop/Discord-Fivem-Playerlist
+Discord-Fivem-Playerlist : https://github.com/bycop/Discord-Fivem-Playerlist <br>
 Discord-Image-to-twitter : https://github.com/bycop/Discord-Image-to-twitter
