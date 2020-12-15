@@ -31,3 +31,8 @@ Don't forget to change or remove the lines Role name line 73 and 74 of index.js
 }
 ```
 When you run the bot, the two commands are !playerlist and !playercount. You can change the commands and restrict or no the playerlist command in the index.js file
+
+## Others Bots
+
+Discord-Fivem-Playerlist : https://github.com/bycop/Discord-Fivem-Playerlist
+Discord-Image-to-twitter : https://github.com/bycop/Discord-Image-to-twitter
