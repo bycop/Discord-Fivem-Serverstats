@@ -1,6 +1,7 @@
 {
     "prefix" : "!",
     "discord" : "",
+    "channel" : "",
     "ipabs" : "",
     "port" : "30120",
     "activity" : "GameActivity",

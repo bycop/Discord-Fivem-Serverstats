@@ -1,8 +1,8 @@
-# Fivem Discord Playerlist
+# Fivem Discord Serverstats
 
 ## Introduction
 
-A simple node.js bot to send playerlist and playercount of a Fivem Server to a Discord channel.
+A simple node.js bot to send serverstats, playerlist and playercount of a Fivem Server to a Discord channel.
 
 ## Needs
 
@@ -15,6 +15,7 @@ Once you download the files and install node.js, make 'npm install' in the proje
 {
     "prefix" : "!", //Your bot prefix
     "discord" : "Discord ID", //Discord server ID where the bot is
+    "channel" : "Voice Channel ID" //The channel were the playercount can be write
     "ipabs" : "Server IP", //The server ip
     "port" : "Server port (like 30120)", //The server port
     "activity" : "GameActivity", //The message display on "Playing as"
@@ -22,8 +23,27 @@ Once you download the files and install node.js, make 'npm install' in the proje
     "token" : "" //Your bot token
 }
 ```
+Here you can disable the playercount voice channel, just delete the line channel.setName.
+```javascript
+bot.on('ready', () => {
+  var interval = setInterval(function () {
+    let guild = bot.guilds.cache.get(config.discord);
+    let channel = guild.channels.cache.get(config.channel);
+    Gamedig.query({
+      type: 'fivem',
+      host: config.ipabs, // This needs to be a string
+      port: config.port // This needs to be a number & is optional, unless you're not using the default port for that gameserver type
+    }).then((state) => {
+      bot.user.setActivity(state.raw.clients + "/" + state.maxplayers);
+      channel.setName(state.raw.clients + " Connected"); // Enable or disable the Channel player count
+    }).catch((error) => {
+      console.log(error);
+    });
+  }, 1000);
+});
+```
 
-When you run the bot, the two commands are !playerlist and !playercount.
+When you run the bot, the two commands are !serverstats, !playerlist and !playercount.
 
 ## Others Bots
 
