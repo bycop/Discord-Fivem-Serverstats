@@ -43,7 +43,7 @@ bot.on('ready', () => {
 });
 ```
 
-When you run the bot, the two commands are !serverstats, !playerlist and !playercount.
+When you run the bot, the three commands are !serverstats, !playerlist and !playercount.
 
 ## Others Bots
 
