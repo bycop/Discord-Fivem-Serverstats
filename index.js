@@ -22,7 +22,7 @@ bot.on('ready', () => {
     }).catch((error) => {
       console.log(error);
     });
-  }, 1000);
+  }, 300000);
 });
 
 bot.on('messageCreate', (message) => {
