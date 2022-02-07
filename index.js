@@ -1,5 +1,10 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const { Intents } = require('discord.js');
+
+const bot = new Discord.Client({
+  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES],
+});
+
 const config = require('./config.json');
 const Gamedig = require('gamedig');
 
@@ -20,7 +25,7 @@ bot.on('ready', () => {
   }, 1000);
 });
 
-bot.on('message', (message) => {
+bot.on('messageCreate', (message) => {
 
   if (message.author.bot) return;
   if (message.content.indexOf(config.prefix) !== 0) return;
@@ -76,7 +81,7 @@ bot.on('message', (message) => {
         .addField('Command F8', state.connect, true)
         .setTimestamp()
         .setColor('RANDOM')
-      message.channel.send(embed)
+      message.channel.send({ embeds: [embed] })
     }).catch((error) => {
       message.channel.send(`Server offline or not found.`);
     });
