@@ -48,6 +48,11 @@ With all of this you've 2 commands:
 `/players`: To show the full list of connecteds players of your server
 `/count`: Show the amount of connecteds players / max players
 
+## Support
+You like this work and you want to help me hosting my projects ? Just leave a star, a follow or if you are interested, you can Buy me a Coffee !
+
+<a href="https://www.buymeacoffee.com/bycop" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
 ## Others Bots
 
 Discord-global-chat : https://github.com/bycop/Discord-global-chat <br>
